@@ -27,4 +27,4 @@ ADD ./html/index.html /usr/share/nginx/html/index.html
 EXPOSE 80
 
 # 挂载配置数据到宿主机,宿主机挂载路径自动生成,一般可在主机/var/lib/docker/volumes/ 中查找
-#VOLUME ["/etc/nginx/","/var/log/nginx/"]
+VOLUME ["/etc/nginx/","/var/log/nginx/"]
