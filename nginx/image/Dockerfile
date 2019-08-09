@@ -15,10 +15,13 @@ FROM nginx:1.17.2
 MAINTAINER cold
 
 # add file to image
-ADD ./conf /my/conf
-ADD ./scripts /my/scripts
+ADD ./conf/nginx-jenkins.conf /etc/nginx/conf.d/nginx-jenkins.conf
+
+#ADD ./conf /my/conf
+#ADD ./scripts /my/scripts
 # 测试过这样直接加可行
-ADD ./html/index.html /usr/share/nginx/html/index.html
+#ADD ./html/index.html /usr/share/nginx/html/index.html
+
 
 # 运行脚本，RUN是build的时候就会运行
 #RUN chmod 755 /my/scripts/run.sh
