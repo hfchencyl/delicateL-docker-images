@@ -17,7 +17,7 @@ FROM jenkins:2.60.3
 MAINTAINER cold
 
 # port
-EXPOSE 8090
+EXPOSE 8080
 
 # 挂载配置数据到宿主机,宿主机挂载路径自动生成,一般可在主机/var/lib/docker/volumes/ 中查找
 VOLUME ["/var/jenkins_home"]
