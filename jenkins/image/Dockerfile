@@ -3,7 +3,7 @@
 #操作步骤：
 #   下载jenkins官方镜像： docker pull jenkins:2.60.3
 #   根据Dockerfile构建自己的镜像，主要是为了添加挂载信息 docker build -t jenkins-img:v1 .
-#   运行容器 docker run --name jenkins-cont --network mynet --network-alias net.jenkins -d -p 8090:8090 jenkins-img:v1
+#   运行容器 docker run --name jenkins-cont --network mynet --network-alias net.jenkins -d -p 8080:8080 jenkins-img:v1
 
 
 #########################镜像说明#########################
