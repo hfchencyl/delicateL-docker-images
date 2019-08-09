@@ -15,7 +15,7 @@ FROM nginx:1.17.2
 MAINTAINER cold
 
 # add file to image
-ADD ./conf/nginx-jenkins.conf /etc/nginx/conf.d/nginx-jenkins.conf
+ADD conf/default.conf /etc/nginx/conf.d/default.conf
 
 #ADD ./conf /my/conf
 #ADD ./scripts /my/scripts
