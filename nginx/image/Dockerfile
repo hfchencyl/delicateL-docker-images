@@ -3,7 +3,7 @@
 #操作步骤：
 #   下载nginx官方镜像： docker pull nginx:1.17.2
 #   根据当前路径的Dockerfile构建自己的镜像，主要是为了添加挂载信息: docker build -t nginx-img:v1 .
-#   运行容器： docker run --name nginx-cont --link jenkins-cont:jenkins-cont -d -p 80:80 nginx-img:v1
+#   运行容器： docker run --name nginx-cont --network mynet --network-alias net.nginx -d -p 80:80 nginx-img:v1
 
 #########################镜像说明#########################
 
