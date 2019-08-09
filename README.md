@@ -3,12 +3,13 @@ delicateL-docker-images
 
  说明： 本工程维护基础docker镜像
  
- 容器依赖顺序：
+ 一、容器依赖顺序：
    nginx依赖jenkins
  
+ 二、各个容器细节
+    1、nginx: 在部署jenkins的时候，理论上来说业务应用和jenkins要区分开，但是公用一台服务器的话，想出来一个方案，就是为jenkins单独配置nginx监听；需要阿里云主机上开放18880端口；
  
- 
- 1、网络： 
+ 三、网络： 
        创建docker网络（容器之间在这个网络内部通讯）： docker network create mynet
    
    

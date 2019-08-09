@@ -15,7 +15,7 @@ FROM nginx:1.17.2
 MAINTAINER cold
 
 # add file to image
-ADD conf/default.conf /etc/nginx/conf.d/default.conf
+ADD conf/jenkins-ng.conf /etc/nginx/conf.d/jenkins-ng.conf
 
 #ADD ./conf /my/conf
 #ADD ./scripts /my/scripts
@@ -27,7 +27,7 @@ ADD conf/default.conf /etc/nginx/conf.d/default.conf
 #RUN chmod 755 /my/scripts/run.sh
 
 # port
-EXPOSE 80
+EXPOSE 80 18880
 
 # 挂载配置数据到宿主机,宿主机挂载路径自动生成,一般可在主机/var/lib/docker/volumes/ 中查找
 VOLUME ["/etc/nginx/","/var/log/nginx/"]
