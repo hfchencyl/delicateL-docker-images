@@ -6,4 +6,7 @@ target/
 .classpath
 .project
 *.rdb
+*.lock
+*.bak
+*.iml
 ~/*
