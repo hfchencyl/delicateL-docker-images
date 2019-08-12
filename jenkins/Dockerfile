@@ -1,7 +1,7 @@
 #########################镜像说明#########################
-#继承自jenkins 版本：2.60.3
+#继承自jenkins 版本：lts
 #操作步骤：
-#   下载jenkins官方镜像： docker pull jenkins:2.60.3
+#   下载jenkins官方镜像： docker pull jenkins:lts
 #   根据Dockerfile构建自己的镜像，主要是为了添加挂载信息 docker build -t jenkins-img:v1 .
 #   运行容器   docker run --name jenkins-cont --network mynet --network-alias net.jenkins -d jenkins-img:v1
 
@@ -11,7 +11,7 @@
 
 
 # base images
-FROM jenkins:lts
+FROM jenkins/jenkins:lts
 
 # auther
 MAINTAINER cold
