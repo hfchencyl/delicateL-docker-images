@@ -3,7 +3,7 @@
 #操作步骤：
 #   下载mysql官方镜像： docker pull mysql:5.7.22
 #   根据Dockerfile构建自己的镜像，主要是为了添加挂载信息 docker build -t mysql-img:v1 .
-#   运行容器 docker run --name mysql-cont --network mynet --network-alias net.mysql -d -p 3306:3306 mysql-img:v1
+#   运行容器 docker run --name mysql-cont --network mynet --network-alias net.mysql -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=cold mysql-img:v1
 
 
 #########################镜像说明#########################

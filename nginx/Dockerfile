@@ -16,6 +16,7 @@ MAINTAINER cold
 
 # add file to image
 ADD conf/jenkins-ng.conf /etc/nginx/conf.d/jenkins-ng.conf
+ADD conf/delicate-ng.conf /etc/nginx/conf.d/delicate-ng.conf
 
 #ADD ./conf /my/conf
 #ADD ./scripts /my/scripts
