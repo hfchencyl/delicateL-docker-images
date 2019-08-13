@@ -11,7 +11,7 @@
 
 
 # base images
-FROM jenkins/jenkins
+FROM jenkins/jenkins:lts
 
 # auther
 MAINTAINER cold
